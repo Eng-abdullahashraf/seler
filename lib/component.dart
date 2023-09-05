@@ -1,8 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:get/get.dart';
 import 'package:get/utils.dart';
 import 'package:localize_and_translate/localize_and_translate.dart';
+import 'package:seler/controller/homecontroller.dart';
 
 import 'Screens/shops/shopascreen.dart';
 import 'Screens/shops/shopdesc.dart';
@@ -136,4 +138,111 @@ Widget descreption() => Container(
     maxLines: 4,
     overflow: TextOverflow.ellipsis,
   ),
+);
+
+
+Widget overview() => Column(
+  children: [
+    Container(
+      color: Color(0xff058060),
+      child: SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: Row(
+          children: [
+            TextButton(
+                onPressed: () {
+
+
+                },
+                child: Text(Trans('thesales').tr,
+                    style: TextStyle(color: Colors.white))),
+            TextButton(
+                onPressed: () {
+
+                },
+                child: Text(Trans('profits').tr,
+                    style: TextStyle(color: Colors.white))),
+            TextButton(
+                onPressed: () {
+
+                },
+                child: Text(Trans('bestsellingpro').tr,
+                    style: TextStyle(color: Colors.white))),
+            TextButton(
+                onPressed: () {
+
+                },
+                child: Text(Trans('mostprofpro').tr,
+                    style: TextStyle(color: Colors.white))),
+          ],
+        ),
+      ),
+    ),
+    //controller.overviewrow[0],
+
+    // Container(
+    //   child: controller.overviewrow[controller.overviewnumber!],
+    // ),
+  ],
+);
+
+
+Widget sell() => Container(
+
+decoration: BoxDecoration(color: Colors.black),
+  child: Text('data'),
+);
+
+Widget salary() => Container(
+  color: Color(0xb08ea39c),
+  child: Text('data'),
+);
+Widget prosell() => Container(
+  color: Color(0xb08ea39c),
+  child: Text('data'),
+);
+Widget prosala() => Container(
+  color: Color(0xb08ea39c),
+  child: Text('data'),
+);
+
+Widget aggregatedata() => Column(
+  children: [
+    Container(
+      width: double.infinity,
+      color: Color(0xff058060),
+      child: Row(
+        children: [
+          Expanded(
+            child: TextButton(
+                onPressed: () {
+                  //              controller.changegagreedata(0);
+                },
+                child: Text(Trans('thesales').tr,
+                    style: TextStyle(color: Colors.white))),
+          ),
+          Expanded(
+            child: TextButton(
+                onPressed: () {
+                  //controller.changegagreedata(1);
+                },
+                child: Text(Trans('purchases').tr,
+                    style: TextStyle(color: Colors.white))),
+          ),
+        ],
+      ),
+    ),
+    // Container(
+    //  child:  controller.agreedata[ controller.agreedatanumber!],
+    // ),
+  ],
+);
+
+Widget sales() => Container(
+  color: Color(0xb08ea39c),
+  child: Text('data'),
+);
+Widget purchases() => Container(
+  color: Color(0xb08ea39c),
+  child: Text('data'),
 );

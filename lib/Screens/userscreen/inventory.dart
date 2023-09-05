@@ -32,7 +32,7 @@ class inventorypage extends StatelessWidget {
                 ),
                 textwrite(
                   Iconcolor: Appcolor().secondcolor,
-                  Fillcolor: Color(0xffffffff),
+                  Fillcolor: Colors.white,
                   PrefIcon: Icon(Icons.add_shopping_cart),
                   LableText: 'products'.tr,
                   HintText: 'findproduct'.tr,

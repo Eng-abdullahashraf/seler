@@ -1,6 +1,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:seler/Screens/userscreen/aggregate.dart';
+import 'package:seler/Screens/userscreen/overview.dart';
 
 import '../component.dart';
 
@@ -44,5 +46,41 @@ class homecontroller extends GetxController{
 
   void changeshopinformation(d){
     shopsinformationnum=d;
+
+  }
+
+  DateTime dateTime=DateTime(1997,08,25);
+
+  void changedate(date){
+    dateTime=date;
+  }
+
+
+  List<Widget> overviewrow =[sell(),salary(),prosell(),prosala()];
+
+  int? overviewnumber = 0;
+  void changeoverviewrow(z){
+    overviewnumber=z;
+    update();
+
+  }
+
+  List<Widget> agreedata = [purchases(),sales()];
+  int? agreedatanumber = 0;
+
+  void changegagreedata(d){
+    agreedatanumber=d;
+    update();
+
+
+  }
+
+  List<Widget> accountmanagement=[Overview(),Aggregatedata()];
+
+  int? accountmanagementnumber=0;
+
+  void changeaccountmanage(d){
+    accountmanagementnumber=d ;
+    update();
   }
 }

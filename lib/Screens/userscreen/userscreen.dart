@@ -1,8 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:seler/Screens/userscreen/account%20management.dart';
+import 'package:seler/Screens/userscreen/add%20suppliers.dart';
+import 'package:seler/Screens/userscreen/buying.dart';
+import 'package:seler/Screens/userscreen/coustomers.dart';
+import 'package:seler/Screens/userscreen/expenses.dart';
 import 'package:seler/Screens/userscreen/inventory.dart';
+import 'package:seler/Screens/userscreen/selling.dart';
 import 'package:seler/theme/colors.dart';
+
+import 'suppliers.dart';
 
 class userscreen extends StatelessWidget {
   const userscreen({Key? key}) : super(key: key);
@@ -154,7 +162,9 @@ class userscreen extends StatelessWidget {
                   children: [
                     Expanded(
                       child: GestureDetector(
-                        onTap: () {},
+                        onTap: () {
+                          Get.to(buying());
+                        },
                         child: Stack(
                           children: [
                             Container(
@@ -188,7 +198,9 @@ class userscreen extends StatelessWidget {
                     SizedBox(width: 15),
                     Expanded(
                         child: GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Get.to(selling());
+                      },
                       child: Stack(
                         children: [
                           Container(
@@ -230,7 +242,9 @@ class userscreen extends StatelessWidget {
                   children: [
                     Expanded(
                       child: GestureDetector(
-                        onTap: () {},
+                        onTap: () {
+                          Get.to(suppliers());
+                        },
                         child: Stack(
                           children: [
                             Container(
@@ -264,7 +278,9 @@ class userscreen extends StatelessWidget {
                     SizedBox(width: 15),
                     Expanded(
                         child: GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Get.to(customers());
+                      },
                       child: Stack(
                         children: [
                           Container(
@@ -306,7 +322,9 @@ class userscreen extends StatelessWidget {
                   children: [
                     Expanded(
                       child: GestureDetector(
-                        onTap: () {},
+                        onTap: () {
+                          Get.to(expenses());
+                        },
                         child: Stack(
                           children: [
                             Container(
@@ -340,7 +358,9 @@ class userscreen extends StatelessWidget {
                     SizedBox(width: 15),
                     Expanded(
                         child: GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Get.to(accountmanagement());
+                      },
                       child: Stack(
                         children: [
                           Container(
